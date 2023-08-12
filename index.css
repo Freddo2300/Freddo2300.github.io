@@ -1,0 +1,166 @@
+body {
+    height: 100%;
+}
+
+main {
+    align-items: center;
+    position: relative;
+    vertical-align: center;
+}
+
+.navbar {
+    height: 75px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#test {
+    width: 100%;
+}
+
+#text-box {
+    display: flex;
+    justify-content: start;
+}
+
+.navbar-text-elem {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.top {
+    z-index: 999;
+}
+
+.card {
+    float: none;
+    margin: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.card-body {
+    background-image: linear-gradient(to right, #f5f6f6, #e7e7f3);
+    border: 1px solid #000000;
+    filter: drop-shadow(5px 5px 1px #000);
+    border-radius: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.btn-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 16px;
+    padding-left: 12px;
+}
+
+.loan-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 16px;
+    padding-left: 12px;
+}
+
+.col-sm-3 {
+    border: none;
+}
+
+.textbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#repay-btn {
+    display: none;
+}
+
+/*
+Laptops
+*/
+
+#laptop-select {
+    width: 100%;
+    text-align: left;
+}
+
+#laptop-items {
+    width: 100%;
+}
+
+.dropdown-menu {
+    z-index: 999;
+}
+
+#product-img {
+    background-color: grey;
+    border-radius: 15px 0 0 0;
+    border-right: 1px solid black;
+}
+
+.laptop-column {
+    text-align: left;
+}
+
+.laptop-details {
+    text-align: left;
+    justify-content: space-between;
+}
+
+#card-container {
+    border-radius: 15px;
+}
+
+#product-top {
+    justify-content: start;
+}
+
+#feature-row {
+    justify-content: start;
+    text-align: left;
+}
+
+#product-description {
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+}
+
+#purchase-box {
+    display: flex; 
+    align-items: center;
+}
+
+#product-price {
+    font-size: 30px;
+    font-weight: bolder;
+    color: green;
+    display: table-cell;
+    vertical-align: middle;
+}
