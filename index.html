@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Shop – Broke people laptop heaven!</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/16x16_Tech-Shop.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/32x32_Tech-Shop.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/32x32_Tech-Shop.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/64x64_Tech-Shop.png">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div id="test" class="container">
+                <div id="test" class="row">
+                    <div id="text-box" class="col-sm-9 d-flex">
+                        <a class="navbar-text-elem navbar-brand" href="#">
+                            <img src="assets/48x48_Tech-Shop.png" width="48" height="48" class="navbar-text-elem">
+                            Tech Shop – Broke people laptop heaven!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper v-center-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 top bank-container">
+                        <div class="card border-0" style="height: 12rem; width: 18rem;">
+                            <div class="card-body bank-card">
+                                <h5 class="card-title">Account</h5>
+                                <div class="vstack">
+                                    <div class="textbox">
+                                        <p class="card-text-left">Bank balance: </p>
+                                        <p id="bank-balance" class="card-text-right">0 kr.</p>
+                                    </div>
+                                    <div class="textbox">
+                                        <p class="card-text-left">Outstanding: </p>
+                                        <p id="amount-due" class="card-text-right">0 kr.</p>
+                                    </div>
+                                </div>
+                                <row class="loan-btn">
+                                    <a href="#" class="btn btn-primary" onclick='showPopup()'>Apply for loan</a>
+                                    <a href="#" id="repay-btn" class="btn btn-success" onclick='repayLoan()'>Repay
+                                        loan</a>
+                                </row>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 top">
+                        <div class="card border-0" style="height: 12rem; width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Work</h5>
+                                <div class="textbox">
+                                    <p class="card-text-left">Salary: </p>
+                                    <p id="salary-balance" class="card-text-right">0 kr.</p>
+                                </div>
+                                <row class="btn-bar">
+                                    <a href="#" class="btn btn-primary" onclick='bankSalary()'>Bank</a>
+                                    <a href="#" id="work-btn" class="btn btn-secondary"
+                                        onclick='incrementSalary()'>Work</a>
+                                </row>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 top">
+                        <div class="card border-0" style="height: 12rem; width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Laptops</h5>
+                                <select id="laptop-items" class="form-select form-select-lg mb-3">
+
+                                    <select />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9 bottom">
+                        <div class="card border-0" style="height: 24rem; width: 100%;">
+                            <div class="card-body p-0">
+                                <div id="card-container" class="container-fluid m-0 p-0">
+                                    <div id="product-top" class="row p-0">
+                                        <div class="col-sm-4 laptop-column">
+                                            <img id="product-img" class="img-fluid shifted-start"
+                                                style="height: 200px; width: 300px;">
+                                        </div>
+                                        <div class="col-sm-5 laptop-details">
+                                            <h2 id="product-title" class="card-title"></h2>
+                                            <p id="product-description" class="card-text"></p>
+                                            <row id="test" class="d-flex my-auto">
+                                                <div class="col-sm-5 align-self-center">
+                                                    <p id="product-price" class="text-left">10000 kr.</p>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <a href="#" class="btn btn-primary btn-lg" onclick="purchase()">Buy
+                                                        now</a>
+                                                </div>
+                                            </row>
+                                        </div>
+                                    </div>
+                                    <hr style="margin: 0; background-color: black; color: black; height: 2px;" />
+                                    <div id="feature-row" class="row">
+                                        <div class="col-sm-12">
+                                            <div id="item-container">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
