@@ -11,6 +11,11 @@ function showPopup() {
         return;
     }
 
+    if (userData.balance == 0) {
+        alert("You are broke. Too much risk");
+        return;
+    }
+
     let amount = prompt("Please enter loan amount: ");
 
     if (isNaN(amount) || amount == null || amount == "") {
@@ -18,7 +23,7 @@ function showPopup() {
         return;
     }
 
-    if ((amount > userData.outstanding * 2) && userData.outstanding != 0) {
+    if ((amount > userData.balance * 2) && userData.balance != 0) {
         alert("You cannot get loans twice your current funds.")
 
         return;
